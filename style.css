@@ -1,0 +1,137 @@
+html, body, h1, h2, h3, a,
+ul, li, main, button, section, div, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: sans-serif;
+  color: #333;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.list, .form {
+  display: block;
+  padding: 20px;
+}
+
+.list {
+  width: 25%;
+  display: block;
+  float: left;
+  border-right: 1px solid #333;
+  height: 610px;
+  overflow-y: scroll;
+  box-shadow: 0px 2px 5px 0px #888;
+}
+
+.form {
+  width: 68%;
+  display: block;
+  float: right;
+}
+
+.bookmark {
+  display: block;
+  width: 80%;
+  padding: 5%;
+  margin: auto;
+  border-bottom: 1px solid #999;
+}
+
+.message {
+  margin-left: 6%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #FF3300;
+}
+
+h2 {
+  padding: 4px 0;
+}
+
+a:hover {
+  color: #FF3300;
+}
+
+.info {
+  display: block;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+
+.field {
+  display: block;
+  width: 80%;
+  padding: 3%;
+  margin: auto;
+}
+
+button {
+  float: right;
+  cursor: pointer;
+  border: 1px solid #999;
+  padding: 4px 20px;
+  font-size: 12px;
+  transition: color 1s, box-shadow 1s;
+}
+
+button:hover {
+  color: #999;
+  box-shadow: 1px 1px 1px #999;
+}
+
+.form button {
+  font-size: 20px;
+  margin-right: 40px;
+  background: #333;
+  color: white;
+}
+
+.form button:hover {
+  background: black;
+}
+
+h3 {
+  margin: auto;
+  display: block;
+}
+
+input {
+  display: block;
+  width: 280px;
+  padding: 10px;
+  margin: 18px auto;
+  cursor: text;
+  border-color: #ccc;
+  outline: none;
+}
