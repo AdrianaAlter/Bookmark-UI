@@ -27,7 +27,7 @@ var List = React.createClass({
   successMessage: function () {
     this.setState({ message: "Your bookmark was successfully deleted!" });
     var self = this;
-    setTimeout(function() { self.setState({ message: "" }) }, 3000);
+    setTimeout(function() { self.setState({ message: "" }) }, 2000);
   },
 
   render: function () {
@@ -41,7 +41,7 @@ var List = React.createClass({
     });
 
     return <div className="list">
-              <h1>MY BOOKMARKS</h1>
+              <h1>BOOKMARKS</h1>
               <section className="message success">{this.state.message}</section>
               <ul>{bookmarks}</ul>
            </div>

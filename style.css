@@ -4,7 +4,7 @@ ul, li, main, button, section, div, p {
   padding: 0;
   border: 0;
   outline: 0;
-  font-family: sans-serif;
+  font-family: 'Proza Libre', sans-serif;
   color: #333;
   text-align: inherit;
   text-decoration: inherit;
@@ -25,37 +25,41 @@ ul {
 
 .list, .form {
   display: block;
-  padding: 20px;
+  padding-top: 3vw;
 }
 
 .list {
-  width: 25%;
+  width: 25vw;
   display: block;
   float: left;
-  border-right: 1px solid #333;
-  height: 610px;
+  border-right: .1vw solid #333;
+  height: 100vh;
   overflow-y: scroll;
-  box-shadow: 0px 2px 5px 0px #888;
+  box-shadow: 0 .2vw .4vw 0 #888;
 }
 
 .form {
-  width: 68%;
+  width: 60vw;
   display: block;
-  float: right;
+  float: left;
 }
 
 .bookmark {
   display: block;
-  width: 80%;
-  padding: 5%;
+  width: 20vw;
+  padding-bottom: 2vh;
   margin: auto;
-  border-bottom: 1px solid #999;
+  border-bottom: .25vh solid #999;
+}
+
+.starred > h2, .starred > h2 > a {
+  color: #157EFB;
 }
 
 .message {
-  margin-left: 6%;
+  margin-left: 1vw;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 1.25vw;
 }
 
 .success {
@@ -69,51 +73,56 @@ ul {
 
 h1 {
   text-align: center;
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #FF3300;
+  font-size: 2.5vw;
+  margin-bottom: 2vh;
+  color: #193C5E;
 }
 
 h2 {
-  padding: 4px 0;
+  font-size: 1.75vw;
+}
+
+a {
+  font-size: 1vw;
 }
 
 a:hover {
-  color: #FF3300;
+  color: #193C5E;
 }
 
 .info {
   display: block;
-  padding: 5px;
-  margin: 5px 0;
+  padding: 1vw 1.25vw;
 }
 
 
 .field {
   display: block;
-  width: 80%;
-  padding: 3%;
+  width: 48vw;
+  padding: 1vw 1.5vw;
   margin: auto;
 }
 
 button {
   float: right;
   cursor: pointer;
-  border: 1px solid #999;
-  padding: 4px 20px;
-  font-size: 12px;
+  border: .1vw solid #999;
+  padding: .75vh 3.25vh;
+  margin-left: .6vw;
+  font-size: 1.25vw;
   transition: color 1s, box-shadow 1s;
 }
 
 button:hover {
   color: #999;
-  box-shadow: 1px 1px 1px #999;
+  box-shadow: .25vw .25vw .25vw #999;
 }
 
 .form button {
-  font-size: 20px;
-  margin-right: 40px;
+  font-size: 1.5vw;
+  margin-right: 4vw;
   background: #333;
+  transition: background 1s;
   color: white;
 }
 
@@ -128,9 +137,10 @@ h3 {
 
 input {
   display: block;
-  width: 280px;
-  padding: 10px;
-  margin: 18px auto;
+  width: 36vw;
+  padding: .75vw;
+  font-size: 1.25vw;
+  margin: 1vw auto;
   cursor: text;
   border-color: #ccc;
   outline: none;

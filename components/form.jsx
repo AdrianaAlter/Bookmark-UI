@@ -23,7 +23,7 @@ var Form = React.createClass({
     var self = this;
     setTimeout(function() {
       self.setState({ message: "" }) }
-      , 3000)
+      , 2000)
   },
 
   addBookmark: function (e) {
